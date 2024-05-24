@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+   
+    
+   <div id="testdiv">
+       <h2 style="display: none;">Hello World</h2>
+       
+       <span id="testspan">This is a Span Tag</span>
+   </div>
+
+    <script>
+      //appendchild and prependchild 
+       let hElement = document.createElement('h1');   //<h1></h1>
+       hElement.innerHTML = 'Hello Everyone';         //<h1>Hello Everyone</h1>
+
+       document.body.append(hElement);
+
+       let aElement = document.createElement('a');
+       aElement.innerHTML = 'Facebook';
+
+       document.body.prepend(aElement);
+
+       // Insert any tag any where
+       let pElement = document.createElement('p');  // <p></p>
+       pElement.innerHTML = 'This is a P Tag' 
+
+       let testspan = document.querySelector('#testspan');
+       let testdiv = document.querySelector('#testdiv');
+       testdiv.insertBefore(pElement,testspan);
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+       
+       
+       
+
+
+    </script>
+</body>
+</html>
