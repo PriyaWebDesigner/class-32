@@ -26,6 +26,16 @@
 
        document.body.prepend(aElement);
 
+       let sElement = document.createElement('p');
+       sElement.innerHTML = 'This Sentence is Appendchild';
+
+       document.body.append(sElement)
+
+       let bElement = document.createElement('h2');
+       bElement.innerHTML = 'This Sentence is prependchild';
+
+       document.body.prepend(bElement);
+
        // Insert any tag any where
        let pElement = document.createElement('p');  // <p></p>
        pElement.innerHTML = 'This is a P Tag' 
